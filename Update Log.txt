@@ -1,0 +1,117 @@
+Note: Changing resolution output changes runtime of app.
+
+TODO: Integrate Oculus output directly. (w/o Oculus Overlay)
+TODO: Object detection (calcObjectDetect() in main.cpp) needs to be incorporated into current system.
+---------------------------------------------------------------------------------------------------------------------
+8/14/2014 1:03 AM PST (PUSHED TO GITHUB)
+
+Implemented object detection: read image of object, detect presence of object in live feed.
+---------------------------------------------------------------------------------------------------------------------
+8/9/2014 2:46 PM PST (PUSHED TO GITHUB)
+
+Working prototype.
+Demo-ready.
+Pebble menu works with controlling findAR application.
+Everything is working.
+Switched facial rec back to other algorithm.
+Parsing from Pebble app works.
+Switching from mode-to-mode works.
+Web application also works.
+---------------------------------------------------------------------------------------------------------------------
+8/9/2014 10:05 AM PST (PUSHED TO GITHUB)
+
+Pebble and Web Framework created.
+Implemented cURL to grab info from Pebble app.
+---------------------------------------------------------------------------------------------------------------------
+8/9/2014 6:14 AM PST (PUSHED TO GITHUB)
+
+Switched facial algorithm to LBPH. Improved performance.
+Might need more training examples to be robust.
+---------------------------------------------------------------------------------------------------------------------
+8/9/2014 5:04 AM PST (PUSHED TO GITHUB)
+
+Integrated code for facial recognition. (Still needs tweaking).
+---------------------------------------------------------------------------------------------------------------------
+8/9/2014 4:14 AM PST (PUSHED TO GITHUB)
+
+Added modes and preparing for web socket integration for data transfer from Pebble.
+Added various filters on top of the color picker one.
+---------------------------------------------------------------------------------------------------------------------
+8/8/2014 7:40 PM PST (PUSHED TO GITHUB)
+
+Changed color thresholds.
+Deleted ImageUtils module.
+---------------------------------------------------------------------------------------------------------------------
+8/8/2014 1:42 PM PST (PUSHED TO GITHUB)
+
+Edited README.
+---------------------------------------------------------------------------------------------------------------------
+8/8/2014 1:06 AM PST (PUSHED TO GITHUB)
+
+Moved some matrix initialization outside of while loop.
+Lowering the resolution is probably the best way to go for speeding up application.
+Removed the old version .dll files, deemed unnecessary.
+Changed some includes in imageUtils.cpp linking to updated opencv libraries.
+---------------------------------------------------------------------------------------------------------------------
+8/8/2014 12:23 AM PST (PUSHED TO GITHUB)
+
+Shortened code for creating final window.
+Changed prototype for trackFilteredObject().
+---------------------------------------------------------------------------------------------------------------------
+8/7/2014 11:35 PM PST (PUSHED TO GITHUB)
+
+Edited README.
+---------------------------------------------------------------------------------------------------------------------
+8/7/2014 11:16 PM PST (PUSHED TO GITHUB)
+
+Fixed object brightness bug in main.cpp
+---------------------------------------------------------------------------------------------------------------------
+8/7/2014 9:57 PM PST (PUSHED TO GITHUB)
+
+Changed size values in threshold image to reduce noise.
+---------------------------------------------------------------------------------------------------------------------
+8/7/2014 8:55 PM PST (PUSHED TO GITHUB)
+
+Removed extra output (windows and cout).
+Implemented color on grayscale filter.
+Oculus findAR is now ready for demo.
+---------------------------------------------------------------------------------------------------------------------
+8/7/2014 7:40 PM PST (PUSHED TO GITHUB)
+
+Removed drawObject(), hexToHSV(), intToString().
+Fixed all the type cast warnings in our files.
+---------------------------------------------------------------------------------------------------------------------
+8/7/2014 6:42 PM PST (PUSHED TO GITHUB)
+
+Removed "Calculate moments of threshold image"
+Removed "Create a black image with the size as the camera output"
+Removed int hexValue and cout/cin statements with hexValue
+Removed "Capture a temporary image from the camera"
+Removed imgOriginal = imgOriginal + imgLines
+Created and displayed grayscale image
+Created binary image
+Changed windowMain to colorWheelTitle, also its title value
+---------------------------------------------------------------------------------------------------------------------
+8/7/2014 6:25 PM PST (PUSHED TO GITHUB)
+
+Organized the HSVColorWheel functions into a separate cpp/h file
+Removed trackbars from the color wheel.
+Had to leave the MouseEvent function in main because of scary function pointers.
+---------------------------------------------------------------------------------------------------------------------
+8/7/2014 5:21 AM PST (PUSHED TO GITHUB)
+
+Removed comment from main.cpp
+---------------------------------------------------------------------------------------------------------------------
+8/7/2014 5:12 AM PST (PUSHED TO GITHUB)
+
+Added README
+Removed vcproj and prop files from repo.
+---------------------------------------------------------------------------------------------------------------------
+8/7/2014 4:25 AM PST (PUSHED TO GITHUB)
+
+Imported OpenCV libraries.
+Got black/white image threshold to work with live webcam feed.
+Got object tracking by color to work.
+Got HSV color wheel to work interactively.
+Can use Oculus Overlay to view the tracking video feed on the Oculus Rift.
+Set outline indicator to smaller pixel width.
